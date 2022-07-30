@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # get "restaurants/:id/edit", to: "restaurants#edit"
   # patch "restaurants/:id", to: "restaurants#update"
   resources :restaurants do
-    resources :reviews, only: [:new]
+    resources :reviews, only: [:new, :create]
   end
   # post "restaurants/:restaurant_id/reviews", to: "reviews#create"
   # get "restaurants/:restaurant_id/reviews/new", to: "reviews#new"

@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 puts "Cleaning database..."
-Restaurant.destroy_all
+# Restaurant.destroy_all
 
 puts "Creating restaurants..."
 dishoom = {name: "Dishoom", address: "7 Boundary St, London E2 7JE", phone_number: 56789, category:"italian"}
@@ -21,3 +21,7 @@ macdonalds =  {name: "macdonalds", address: "10c low St, London E1 8PQ",  phone_
   puts "Created #{restaurant.name}"
 end
 puts "Finished!"
+
+# dishoom_review = Review.new(content: "nice", rating: 3)
+# dishoom_review.restaurant = dishoom
+# dishoom_review.save!
